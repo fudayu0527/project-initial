@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: 'blog'
+  thymeleaf:
+    encoding: utf-8
+    cache: true #热部署静态文件
+    mode: HTML5
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  profiles:
+    active: test
+server:
+  port: 8888
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  type-aliases-package: com.fdyblog.blogproject.dao.domain # 注意：对应实体类的路径
+  executor-type: simple #设置执行模式（SIMPLE, REUSE, BATCH），默认为SIMPLE
+  check-config-location: true  #检查配置文件是否存在
