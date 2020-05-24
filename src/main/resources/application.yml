@@ -1,6 +1,10 @@
 spring:
   application:
     name: 'blog'
+  proxy:
+    enable: true
+    url: "127.0.0.1"
+    port: 1080
   thymeleaf:
     encoding: utf-8
     cache: true #热部署静态文件
@@ -11,8 +15,14 @@ spring:
       suffix: .jsp
   profiles:
     active: test
+  rabbitmq:
+    host: 120.79.235.177
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 8888
+
 
 mybatis:
   mapperLocations: classpath*:mapper/*.xml
