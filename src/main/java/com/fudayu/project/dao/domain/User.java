@@ -1,4 +1,4 @@
-package com.fdyblog.blogproject.dao.domain;
+package com.fudayu.project.dao.domain;
 
 import java.util.Date;
 

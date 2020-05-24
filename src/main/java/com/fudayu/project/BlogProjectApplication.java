@@ -1,4 +1,4 @@
-package com.fdyblog.blogproject;
+package com.fudayu.project;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
