@@ -1,10 +1,9 @@
-package com.fdyblog.blogproject.dao.mapper;
+package com.fudayu.project.dao.mapper;
 
-import com.fdyblog.blogproject.dao.domain.User;
-import com.fdyblog.blogproject.dao.domain.UserExample;
+import com.fudayu.project.dao.domain.User;
+import com.fudayu.project.dao.domain.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 
 public interface UserMapper {
